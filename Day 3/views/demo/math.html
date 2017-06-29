@@ -1,13 +1,13 @@
 <div>
 
     <!--TODO #7-->
-    <p>Number a: </p>
+    <p>Number a: <input type="number" ng-model="numA"> </p>
 
-    <p>Number b: </p>
+    <p>Number b: <input type="number" ng-model="numB"></p>
 
     <p>
         <!--TODO Button for calculating values-->
-        
+        <button type="button" ng-click="calculate()">Calculate</button>
     </p>
 
     <p> a + b = <span>{{op1}}</span></p>
