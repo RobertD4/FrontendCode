@@ -1,0 +1,11 @@
+
+<select ng-options="color.text for color in colors" ng-model="myColor" ng-change="changeColor()"></select>
+<select ng-model="myColor2" ng-options="color.text group by color.type for color in colors" ng-change="changeColor">
+</select>
+<span ng-class="variableSave">Some Text</span>
+<br></br>
+First Input:  <input name="input" ng-model="first" required>
+<br></br>
+Second Input: <input name="input2" ng-model="second" required>
+<div ng-repeat="color in colors | filter:'first'">{{color.text}}</div>
+<div ng-repeat="color in colors | orderBy:'second'">{{color.text}}</div>
